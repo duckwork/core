@@ -107,7 +107,7 @@ main(int argc, char **argv)
 				default: kill_xcb(&conn); usage(argv[0]);
 			}
 			/* add a space if more attribute come after */
-			putc(i+1 < strlen(argv[1]) ? ' ' : '\n',stdout);
+			putc(i+1 < strlen(argv[1]) ? '\t' : '\n',stdout);
 		}
 	}
 
